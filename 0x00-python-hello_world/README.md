@@ -1,5 +1,5 @@
 # 0x00. Python - Hello, World
-## Learning Objectives
+## :open_book: Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 * Why Python programming is awesome
 * Who created Python
@@ -11,7 +11,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * How to use strings
 * What are indexing and slicing in Python
 * What is the official Python coding style and how to check your code with ```pycodestyle```
-## Tasks
+## :check_box: Tasks
 ### 0. Run Python file
 Write a Shell script that runs a Python script.
 The Python file name will be saved in the environment variable ```$PYFILE```
