@@ -1,5 +1,5 @@
 # 0x01. Python - if/else, loops, functions
-## ;open_book: Learning Objectives
+## :open_book: Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 * Why Python programming is awesome
 * Why indentation is so important in Python
