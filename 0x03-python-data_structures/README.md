@@ -43,7 +43,7 @@ Complete the source code in order to switch value of `a` and `b`
 ### 13. Linked list palindrome
 Technical interview preparation:
 * You are not allowed to google anything
-* Whiteboard first.
+* Whiteboard first.  
 Write a function in C that checks if a singly linked list is a palindrome.
 * Prototype: `int is_palindrome(listint_t **head);`
 * Return: `0` if it is not a palindrome, `1` if it is a palindrome
