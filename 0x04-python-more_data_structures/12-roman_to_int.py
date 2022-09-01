@@ -11,16 +11,30 @@ def to_subtract(list_num):
 
 
 def roman_to_int(roman_string):
-    if roman_string and isinstance(roman_string, str):
-        rom_num = {'I': 1, 'V': 5, 'X': 10, 'L':
-                   50, 'C': 100, 'D': 500, 'M': 1000}
-        rom_str = roman_string
-        roman_str = 0
-        for rom in range(len(rom_str)):
-            if rom > 0 and (rom_num[rom_str[rom]] > rom_num[rom_str[rom - 1]]):
-                roman_str += rom_num[rom_str[rom]]
-                - (2 * rom_num[roman_string[rom - 1]])
-            else:
-                roman_str += rom_num[rom_str[rom]]
-        return roman_str
-    return (0)
+    if not roman_string:
+        return 0
+
+    if not isinstance(roman_string, str):
+        return 0
+
+    rom_n = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    list_keys = list(rom_n.keys())
+
+    num = 0
+    last_rom = 0
+    list_num = [0]
+
+    for ch in roman_string:
+        for r_num in list_keys:
+            if r_num == ch:
+                if rom_n.get(ch) <= last_rom:
+                    num += to_subtract(list_num)
+                    list_num = [rom_n.get(ch)]
+                else:
+                    list_num.append(rom_n.get(ch))
+
+                last_rom = rom_n.get(ch)
+
+    num += to_subtract(list_num)
+
+    return (num)
