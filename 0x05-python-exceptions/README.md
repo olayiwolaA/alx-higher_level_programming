@@ -1,5 +1,6 @@
 # 0x05. Python - Exceptions
-## :open_book: At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+## :open_book: Learning Objectives
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
  * Why Python programming is awesome
  * What’s the difference between errors and exceptions
  * What are exceptions and how to use them
