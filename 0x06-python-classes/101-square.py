@@ -21,7 +21,7 @@ class Square:
             raise ValueError("size must be >= 0")
 
     def area(self):
-        " returns the current square area"
+        "returns the current square area"
         return self.__size ** 2
 
     @property
@@ -71,6 +71,7 @@ class Square:
             print()
 
     def __str__(self):
+        "Retrieve size in square"
         s = ""
         if self.__size != 0:
             for k in range(self.__position[1]):
