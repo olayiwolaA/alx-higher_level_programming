@@ -1,14 +1,5 @@
 #!/usr/bin/python3
-"""
-   6-base_geometry.py module
-   Class BaseGeometry.
-   Public instance method: \
-   def area(self): that raises an Exception with\
-   the message area() is not implemented.
-   Public instance method:\
-   def integer_validator(self, name, value):\
-   that validates value
-"""
+"""Defines a base geometry class BaseGeometry."""
 
 
 class BaseGeometry:
@@ -17,7 +8,8 @@ class BaseGeometry:
     def area(self):
         """Public instance method: def area(self): \
            that raises an Exception with\
-           the message area() is not implemented."""
+           the message area() is not implemented.
+        """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
