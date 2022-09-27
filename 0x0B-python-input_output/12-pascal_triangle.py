@@ -1,30 +1,30 @@
 #!/usr/bin/python3
+"""
+    0-read_file
+    Reads a text file (UTF8) and prints it to stdout
+"""
+
+
 def pascal_triangle(n):
-    """ Function that returns the pascal triangle
+    """Reads a text file (UTF8) and prints it to stdout"""
+    if n <= 0:
+        return []
+    trian = []
 
-    Args:
-        n: number of lines
+    if n >= 1:
+        row = []
+        row.append(1)
+        trian.append(row)
 
-    Returns:
-        matrix: a matrix with the pascal triangle
-
-    """
-
-    matrix = []
-    prev = []
-
-    for i in range(n):
-        res_list = []
-        p1 = -1
-        p2 = 0
-        for j in range(len(prev) + 1):
-            if p1 == -1 or p2 == len(prev):
-                res_list += [1]
-            else:
-                res_list += [prev[p1] + prev[p2]]
-            p1 += 1
-            p2 += 1
-        matrix.append(res_list)
-        prev = res_list[:]
-
-    return matrix
+    if n > 1:
+        for i in range(2, n + 1):
+            row = []
+            for j in range(i):
+                if j == 0:
+                    row.append(1)
+                elif j == i - 1:
+                    row.append(1)
+                else:
+                    row.append(trian[i - 2][j - 1] + trian[i - 2][j])
+            trian.append(row)
+    return trian
